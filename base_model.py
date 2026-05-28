@@ -172,7 +172,7 @@ class SequenceModel():
         
 
     def predict(self, dl_test):
-        if self.fitted<0:
+        if isinstance(self.fitted, int) and self.fitted < 0:
             raise ValueError("model is not fitted yet!")
         else:
             print('Epoch:', self.fitted)

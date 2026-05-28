@@ -1,0 +1,16 @@
+# Bulk data — pulled from chenditc opensource_data, regenerable
+qlib_data/
+
+# Vendored Qlib source (installed via `pip install -e .`)
+qlib/
+
+# Editor / agent state
+.claude/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Author-published opensource data dumps
+data/opensource/
