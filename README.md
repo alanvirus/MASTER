@@ -410,7 +410,7 @@ qlib_init:
 
 `qlib-update/workflow_config_master_Alpha158.yaml` 引用了 `MASTERTSDatasetH`，它内部用 `marketDataHandler` 来构造 63 维 market 信息。Qlib 默认实现里 `marketDataHandler.get_feature_config()` 用的是 sh000300 + sh000905 + sh000852（CSI100/300/500 之类），**跟论文用的 sh000300 + sh000905 + sh000906（CSI300/500/800）不一致**。
 
-打开 `qlib/qlib/contrib/data/dataset.py`，找到 `marketDataHandler` 类，把 `get_feature_config` 的返回值替换成本仓库 README 第 100–107 行那一大段（覆盖 sh000300/sh000905/sh000906 三个指数）。直接复制粘贴。
+打开 `qlib/qlib/contrib/data/dataset.py`，找到 `marketDataHandler` 类，把 `get_feature_config` 的返回值替换成本仓库 README_origin 第 100–107 行那一大段（覆盖 sh000300/sh000905/sh000906 三个指数）。直接复制粘贴。
 
 ### 4.4 跑
 
